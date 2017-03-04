@@ -11,6 +11,7 @@ print(letter_freqs)
 total = 0
 for letter in letter_freqs:
     total += letter_freqs[letter]
+print(total)
 freq_letter_tupls = sorted([(letter_freqs[letter]/total, letter) for letter in letter_freqs])[::-1]
 german_freq_order = "E-N-I-R-S-T-A-H-D-U-L-C-G-M-O-B-W-F-K-Z-V-P-J-Y-X-Q-1-9-3-0-4-2-6-8-7".lower().split("-")
 print(german_freq_order)
